@@ -1,49 +1,39 @@
-# Course Wiki
+# HTML/CSS Wiki Index
 
-This folder works as the note and theory section of the HTML/CSS workspace.
+This Wiki is organized from basic HTML structure to advanced CSS layouts. Each topic includes a direct link to a practical exercise.
 
-## Recommended Reading Order
+---
 
-1. [project.md](project.md)
-2. [vscode.md](vscode.md)
-3. [css.md](css.md)
-4. [classes.md](classes.md)
-5. [box-model.md](box-model.md)
-6. [measuring-units.md](measuring-units.md)
-7. [block-element.md](block-element.md)
-8. [inline-element.md](inline-element.md)
-9. [gap.md](gap.md)
-10. [flexbox.md](flexbox.md)
-11. [media-query.md](media-query.md)
-12. [tasks-d1.md](tasks-d1.md)
-13. [tasks-d2.md](tasks-d2.md)
+## 🏗️ Module 1: HTML Architecture
+*Topic* | *Practical Exercise*
+:--- | :---
+[Introduction to Course](project.md) | --
+[Visual Studio Code Tips](vscode.md) | --
+[Block Elements (div, p, h1)](block-element.md) | [Practice: Elements](../exercises/lesson-d1/index.html)
+[Inline Elements (span, a, strong)](inline-element.md) | [Practice: Links & Span](../exercises/lesson-d1/index.html)
+[HTML Tables & Forms](project.md) | [Practice: Creating Forms](../exercises/task-d1/contact-form.html)
 
-## Learn by Topic
+---
 
-### HTML Basics
+## 🎨 Module 2: CSS Styling
+*Topic* | *Practical Exercise*
+:--- | :---
+[CSS Syntax & Cascade](css.md) | [Practice: Basic Selectors](../exercises/lesson-d1/style.css)
+[Using Classes](classes.md) | [Practice: Reusable Buttons](../exercises/lesson-d1/style.css)
+[The Box Model](box-model.md) | [Practice: Box Control](../exercises/lesson-d1/style.css)
+[Measuring Units (px, rem, %)](measuring-units.md) | [Practice: Scaling Text](../site/index.html)
 
-- [project.md](project.md)
-- [block-element.md](block-element.md)
-- [inline-element.md](inline-element.md)
+---
 
-### CSS Basics
+## ✨ Module 3: Advanced Layout
+*Topic* | *Practical Exercise*
+:--- | :---
+[The `gap` Property](gap.md) | [Practice: Item Spacing](../exercises/flexbox/style.css)
+[Flexbox Masterclass](flexbox.md) | [Practice: Flexbox Lab](../exercises/flexbox/style.css)
+[Media Queries (Responsive)](media-query.md) | [Practice: Responsive Grid](../site/style.css)
 
-- [css.md](css.md)
-- [classes.md](classes.md)
-- [box-model.md](box-model.md)
-- [measuring-units.md](measuring-units.md)
+---
 
-### Layout
-
-- [gap.md](gap.md)
-- [flexbox.md](flexbox.md)
-- [media-query.md](media-query.md)
-
-### Course Tasks
-
-- [tasks-d1.md](tasks-d1.md)
-- [tasks-d2.md](tasks-d2.md)
-
-## Jump to Examples
-
-Use [example-map.md](example-map.md) if you want concrete files instead of theory notes.
+## 🐿️ Final Project
+When you've completed all modules, apply your skills here:
+- **[Squirrel-Wiki Project](https://github.com/lylehmann/eichhoernchen-wiki-projektarbeit)**

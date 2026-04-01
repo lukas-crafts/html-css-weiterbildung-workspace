@@ -1,35 +1,28 @@
----
-aliases:
-  - Cascading Style Sheets
----
-## Organisation
+# CSS Fundamentals
 
-- in order of the appearance of the elements in the html file
-- create different css files for each component
+CSS (Cascading Style Sheets) is the code that styles web content. This page explains the core principles of how CSS behaves.
 
-## Priorities in which CSS prioritizes formating:
+## The Cascade
 
-1. Class
-2. ID
-3. Element selector
+The "C" in CSS stands for **Cascading**. It means that rules at the bottom of the style sheet generally override rules at the top if they have the same priority.
 
+## Specificity
 
-## Import fonts
+Specificity is how a browser decides which CSS property value is most relevant to an element.
 
-- import own fonts from your local project folder
-- use google fonts
+1.  **Inline styles** (e.g., `style="color:red"`) - Highest priority.
+2.  **IDs** (e.g., `#header`)
+3.  **Classes, Attributes, Pseudo-classes** (e.g., `.btn`, `[type="text"]`, `:hover`)
+4.  **Elements** (e.g., `h1`, `div`, `p`) - Lowest priority.
 
-### Import via link
-- embed code with <link>
+*Rule of thumb: Always prefer classes (e.g., `.btn`) over IDs and inline styles for cleaner, more reusable code.*
 
-### import via @import
+## Inheritance
 
-- @import code (without styles element) and add it to css
-- add font-family into css element
+Some CSS properties inherit their values from their parent (e.g., `font-family`, `color`), while others don't (e.g., `border`, `margin`).
 
-## Font support / browser support
-### apply via universal selector (*) in CSS
-## Conflicts
+## 🚀 Try It Yourself
 
-styles are not applied
-- there are dublicates elements in the css file
+1.  Open **[exercises/lesson-d1/style.css](../exercises/lesson-d1/style.css)**.
+2.  Find the `h1` or `p` elements and add a `color` property.
+3.  Try to override it by creating a custom class (e.g., `.red-text`) and applying it to the HTML.

@@ -1,30 +1,27 @@
+# Measuring Units in CSS
 
-## REM 
+CSS offers many different units for measuring width, height, font size, and spacing. Choosing the right unit is critical for responsive and accessible design.
 
-REM is connected to a base unit, by default 16 px. But it can be changed in user settings.
-used for padding, margins, borders
+## Absolute Units
 
-- 1 REM = 16px
-- 1.5 = 24px
-- 2 REM = 32px
+These units are fixed and will always look the same size relative to other fixed objects.
 
-## EM
+-   **`px` (Pixels)**: The most common absolute unit. It represents a single dot on the screen. Best for things that should not change size based on context (e.g., borders).
 
-EM depends on a given font size in pixels.
+## Relative Units
 
-used for padding, margins, borders
+These units are relative to something else (e.g., the parent element's size or the screen size).
 
-Looks for a given font size in 
+| Unit | Relative to... | Use Case |
+| :--- | :--- | :--- |
+| `%` | **Parent element** | Great for layout (widths/heights). |
+| `em` | **Own / Parent font-size** | Good for padding/margins around text. |
+| `rem` | **Root font-size (<html>)** | **Best for accessibility** (font-sizes). |
+| `vw` | **1% of Viewport Width** | Scale based on screen width. |
+| `vh` | **1% of Viewport Height** | Scale based on screen height. |
 
-1. element
-2. Parent element
-3. Parent of the parent element
-4. ...
-5. default: 16 px
+## 🚀 Try It Yourself
 
-## Percentage
-
-very useful for width, height
-
-depends on the parent element
-
+1.  Open **[site/style.css](../site/style.css)**.
+2.  Find the `font-size` properties and change them from `rem` to `px`.
+3.  Think about how someone with a font size preference in their browser would be affected by this change.
